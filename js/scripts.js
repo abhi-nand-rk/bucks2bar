@@ -2,7 +2,7 @@
 document.getElementById('username').addEventListener('keyup', function () {
     var username = document.getElementById('username').value;
     // regex to check if username has at least 1 capital letter, 1 special character, 1 number and is at least 8 characters long
-    var regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+    var regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*~])(?=.{8,})/;
     if (regex.test(username)) {
         document.getElementById('username').style.borderColor = 'green';
     } else {
